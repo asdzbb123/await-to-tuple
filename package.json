@@ -1,0 +1,37 @@
+{
+  "name": "await-to-tuple",
+  "version": "1.0.0",
+  "description": "Go-style error handling for TypeScript/JavaScript with [ok, err, data] tuples",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest --run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "error-handling",
+    "go-style",
+    "tuple",
+    "async",
+    "promise",
+    "typescript"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "fast-check": "^3.15.0"
+  }
+}
